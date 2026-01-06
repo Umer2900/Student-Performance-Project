@@ -2,12 +2,20 @@
 **Machine Learning–Based Academic Performance Prediction System**
 
 A complete **end-to-end Machine Learning project** that predicts a student’s **Maths score** based on demographic and academic attributes.  
-The system combines **data analysis, machine learning pipelines, and a Flask web application** to deliver real-time predictions.
+The system combines **data analysis, machine learning pipelines, and a FastAPI web application** to deliver real-time predictions.
 
 🏆 **Best Model:** Ridge Regression  
 📊 **R² Score:** 0.880593  
 
 ---
+
+[**Live Demo**](https://student-performance-indicator-project.onrender.com)
+
+- **Live Demo:** [Student Performance Indicator](https://student-performance-indicator-project.onrender.co)
+
+
+---
+
 
 ## 🎥 Demo
 
@@ -22,6 +30,7 @@ The system combines **data analysis, machine learning pipelines, and a Flask web
 - [Technologies Used](#technologies-used)
 - [Project Structure](#project-structure)
 - [Setup Instructions](#setup-instructions)
+- [Live Demo](#live-demo)
 
 ---
 
@@ -59,9 +68,10 @@ Traditional grading systems **do not analyze these relationships**.
 - Ridge Regression used to handle multicollinearity
 
 ### 🌐 Web Application
-- Flask-based backend
-- Simple and interactive UI
+- **FastAPI**-based backend (modern, high-performance, async-ready)
+- Simple and interactive UI with Jinja2 templates
 - Real-time Maths score prediction
+- Automatic API documentation at `/docs`
 - Input validation and error handling
 
 ### 🧱 Software Engineering Practices
@@ -102,7 +112,9 @@ The user enters:
 - **CatBoost** (used during model comparison)
 
 ### **Web Framework**
-- **Flask** – Backend framework
+- **FastAPI** – Modern, fast (ASGI), automatically generates interactive API docs
+- **Uvicorn** – ASGI server for running FastAPI
+- **Jinja2** – Template engine for HTML rendering
 - **HTML5 / CSS3** – Frontend interface
 
 ### **Tools**
@@ -112,6 +124,7 @@ The user enters:
 ---
 
 ## 📁 Project Structure
+
 
 Student-Performance-Project/<br>
 ├── notebook/                   # Jupyter notebooks<br>
@@ -131,7 +144,7 @@ Student-Performance-Project/<br>
 ├── templates/                  # HTML templates<br>
 │   └── index.html              # Frontend UI<br>
 │<br>
-├── app.py                      # Flask application entry point<br>
+├── app.py                      # FastAPI application entry point<br>
 ├── requirements.txt            # Python dependencies<br>
 ├── setup.py                    # Project setup file<br>
 └── README.md                   # Project documentation<br>
@@ -169,8 +182,8 @@ To run this project locally, ensure you have the following installed:
 
 4. **Run the Application**:
    ```bash
-   python app.py
+   uvicorn app:app --reload
    ```
-   The app will be available at `http://127.0.0.1:5000/`.
+   The app will be available at 🌐 `http://127.0.0.1:8000/`.
 
 <br>
