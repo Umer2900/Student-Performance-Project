@@ -13,6 +13,33 @@ The project includes **Exploratory Data Analysis (EDA), model training, preproce
 ![App Demo](assets/demo.gif)
 
 ---
+## 📁 Project Structure
+
+```text
+Student-Performance-Project/
+├── notebook/                   # Jupyter notebooks
+│   ├── data/
+│   │   └── stud.csv            # Dataset
+│   ├── EDA.ipynb               # Exploratory Data Analysis
+│   └── Model_Training.ipynb    # Model training & evaluation
+│
+├── src/                        # Source code
+│   ├── components/             # Data ingestion, transformation, model trainer
+│   ├── pipeline/               # Training & Prediction pipelines
+│   │   └── predict_pipeline.py 
+│   ├── utils.py                # Utility functions
+│   ├── logger.py               # Logging configuration
+│   └── exception.py            # Custom exception handling
+│
+├── templates/                  # HTML templates
+│   └── index.html              # Frontend UI
+│
+├── app.py                      # Flask application entry point
+├── requirements.txt            # Python dependencies
+├── setup.py                    # Project setup file
+└── README.md                   # Project documentation
+
+---
 
 ## 🚀 Features
 
@@ -42,30 +69,4 @@ The project includes **Exploratory Data Analysis (EDA), model training, preproce
 - **Jupyter Notebook**: For experimentation and EDA.
 - **Git & GitHub**: Version control.
 
----
 
-## 📁 Project Structure
-
-```text
-Student-Performance-Project/
-├── notebook/                   # Jupyter notebooks
-│   ├── data/
-│   │   └── stud.csv            # Dataset
-│   ├── EDA.ipynb               # Exploratory Data Analysis
-│   └── Model_Training.ipynb    # Model training & evaluation
-│
-├── src/                        # Source code
-│   ├── components/             # Data ingestion, transformation, model trainer
-│   ├── pipeline/               # Training & Prediction pipelines
-│   │   └── predict_pipeline.py 
-│   ├── utils.py                # Utility functions
-│   ├── logger.py               # Logging configuration
-│   └── exception.py            # Custom exception handling
-│
-├── templates/                  # HTML templates
-│   └── index.html              # Frontend UI
-│
-├── app.py                      # Flask application entry point
-├── requirements.txt            # Python dependencies
-├── setup.py                    # Project setup file
-└── README.md                   # Project documentation
