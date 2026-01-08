@@ -1,7 +1,6 @@
 # 🎓 Student Performance Indicator  
-**Machine Learning–Based Academic Performance Prediction System**
 
-A complete **end-to-end Machine Learning project** that predicts a student’s **Maths score** based on demographic and academic attributes. The system combines **data analysis, machine learning pipelines, and a FastAPI web application** to deliver real-time predictions.
+A complete **end-to-end Modular Machine Learning project** that predicts a student’s **Maths score** based on demographic and academic attributes. The system combines **data analysis, machine learning pipelines, and a FastAPI web application** to deliver real-time predictions.
 
 🏆 **Best Model:** Ridge Regression  
 📊 **R² Score:** 0.880593  
